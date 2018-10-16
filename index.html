@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
-
+	<!-- INSTRUCTOR COMMENT:
+	Move the <h2> and <img> so they're inside the <section>
+	-->
 	<h2>Lexington, KY currently</h2>
-<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+	<!-- INSTRUCTOR COMMENT:
+	For an image to show up you'll need to either need to:
+	1. Set the src attribute as URL of an image online
+	2. Add an image to your repository and set the src attribute to the name of that image. Make sure to include the file extension.
+	-->
+ <img src="500x600.png" alt="Girl in a jacket" width="500" height="600">
 
 <head>
 	<meta charset=utf-8 />
@@ -22,6 +29,11 @@
 			font-family: "Noto Sans", sans-serif;
 			color: #3d3d3d;
 		}
+
+		/*  INSTRUCTOR COMMENT
+		Let's experiment! Change the style property that controls the width of all elements inside "section". If we change from a fixed-width to a relative width, the content adapts better for different screen sizes. Try setting the width to 80%
+		*/
+
 		section {
 			width: 960px;
 			margin: 20px auto;
@@ -81,7 +93,7 @@
 			<li>See my projects on GitHub:
 				<a href="https://github.com/emilyrrodesspencer">New Maps Plus</a>
 			</li>
-			
+
 		</ul>
 	</section>
 
@@ -115,4 +127,3 @@
 </body>
 
 </html>
-		
