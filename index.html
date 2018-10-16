@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
 
+<!-- INSTRUCTOR COMMENT:
+Remove this <h1> tag and its content.
+ -->
 <h1>Hometown Map Branch</h1>
-	
+
+<!-- INSTRUCTOR COMMENT:
+Include an opening <head> tag for the head of your HTML file.
+ -->
+<head>
 	<meta charset=utf-8 />
+	<!-- INSTRUCTOR COMMENT:
+	Change <title> text to something unique
+  -->
 	<title>Web Page Template</title>
 	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
@@ -21,6 +31,9 @@
 			color: #3d3d3d;
 		}
 
+		/*  INSTRUCTOR COMMENT:
+		Let's experiment! Change the style property that controls the width of all elements inside "section". If we change from a fixed-width to a relative width, the content adapts better for different screen sizes. Try setting the width to 80%
+		*/
 		section {
 			width: 960px;
 			margin: 20px auto;
@@ -81,12 +94,18 @@
 
 
 		<h2>about this map</h2>
+		<!-- INSTRUCTOR COMMENT:
+		Change the text here to describe your hometown map and/or something about your hometown
+	 -->
 		<p>Additional information about
 			<a href="#">the data</a> and map goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis urna magna, maximus nec
 			laoreet sit amet, dictum ultricies nibh. Ut id auctor lacus. Nam a dolor et justo luctus luctus.</p>
 
 		<ul>
 			<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+			<!-- INSTRUCTOR COMMENT:
+			Swap out the text and URLs to your own personal links...or something else entirely!
+			-->
 			<li>See my projects on GitHub:
 				<a href="https://github.com/newmapsplus">New Maps Plus</a>
 			</li>
@@ -106,6 +125,9 @@
 
 		// map options
 		var options = {
+			/* INSTRUCTOR COMMENT
+			Consider changing the center and zoom properties even if you live in Lexington. Perhaps make place the marker in a different part of town and zoom further into the map.
+			*/
 			center: [38.0406, -84.5037], // lat/lon values
 			zoom: 12
 		}
@@ -121,6 +143,9 @@
 		}).addTo(map);
 
 		// write a custom message for the Leaflet tooltip
+		/* INSTRUCTOR COMMENT:
+		Replace 'Lexington is awesome!' with your own unique sentiment about Lexington. Just make sure whatever you type is in quotation marks.
+		*/
 		var message = 'Lexington is awesome!';
 
 		// add a marker to the center of the map and open the tooltip
